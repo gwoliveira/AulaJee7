@@ -1,0 +1,21 @@
+ <datasources>
+<datasource jta="true" jndi-name="java:jboss/datasources/projetofinal-ds" pool-name="projetofinal" enabled="true" use-java-context="true" use-ccm="true">
+    <!-- Aqui você deve colocar o endereço da sua base de dados -->
+    <connection-url>jdbc:mysql://localhost:3306/projetofinal</connection-url>
+     <driver>mysql-connector-java-5.1.35-bin.jar_com.mysql.jdbc.Driver_5_1</driver>
+    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+    <pool>
+        <min-pool-size>10</min-pool-size>
+        <max-pool-size>100</max-pool-size>
+        <prefill>true</prefill>
+    </pool>
+    <security>
+        <user-name>root</user-name>
+        <password></password>
+    </security>
+    <statement>
+        <prepared-statement-cache-size>32</prepared-statement-cache-size>
+        <share-prepared-statements>true</share-prepared-statements>
+    </statement>
+</datasource>
+ </datasources>
